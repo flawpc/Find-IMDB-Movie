@@ -1,0 +1,15 @@
+javascript:
+
+if (document.URL.indexOf('imdb.com/title/') > -1) { 
+
+var film = document.getElementsByTagName('H1')[0].innerText;
+
+var film2=film.split(' ').join('_');var film3=film.split(' ').join('');var url='https://www.google.com/search?q=%22parent+directory%22+mp4+OR+AVI+OR+WMV+OR+MOV+OR+FLV+%22' + film +'%22 OR %22' + film2 + '%22 OR %22' + film3 + '%22+-html+-htm+-shtml+-phtml+-php+-buy+-aspx+-jsp+-asp+-cgi+-pdf+-ftp+-unknownsecret&num=100&filter=0';window.open(url,'_self');
+
+} else {
+
+alert('You must be on an IMDB page for this tool!\nRedirecting you now... try again!');
+
+open('https://www.imdb.com/title/tt0031381/?ref_=nv_sr_1');
+
+}
